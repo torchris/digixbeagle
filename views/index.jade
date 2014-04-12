@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  #logger
+  br
+  p Curent temperature from DigiX:
+  b#tempData
+  br
+  br
+  input(type='radio', name='ledStat', value='ledOff', checked='CHECKED')
+  | LED Off
+  input(type='radio', name='ledStat', value='ledOn')
+  | LED On
+
+  
